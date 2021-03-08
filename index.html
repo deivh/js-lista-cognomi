@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Lista Cognomi</title>
+
+</head>
+<body>
+    <div class="container">
+        <p class="mainText"></p>
+    </div>
+    <script>
+        // Chiedere all'utente il suo cognome e inserirlo in un array non ordinato. 
+        // Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico e la posizione "umana" (partendo da 1) del cognome dell'utente.
+        var sur = ['Alessi', 'Sbaglia' , 'Gamba', 'Venti', 'Fasano', 'Cascia'];
+        console.log(sur);
+        var surUser = prompt("Inserisci il tuo cognome");
+        sur.push(surUser);
+        sur.sort();
+        console.log(sur);
+        for (var i=0; i<sur.length;i++) {
+            var humIndex = i + 1;
+            console.log(humIndex, sur[i]);
+        }
+    </script>
+</body>
+</html>
